@@ -23,21 +23,21 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Gradient text utility */
+/* Gradient text — matches logo cyan → blue → purple */
 .gradient-text {
-  background: linear-gradient(135deg, #fff 0%, #a78bfa 50%, #818cf8 100%);
+  background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 40%, #a855f7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Glow effect */
+/* Glow effect — cyan-blue tint */
 .glow {
-  box-shadow: 0 0 60px rgba(139, 92, 246, 0.15), 0 0 120px rgba(139, 92, 246, 0.05);
+  box-shadow: 0 0 60px rgba(59, 130, 246, 0.15), 0 0 120px rgba(34, 211, 238, 0.05);
 }
 
 .glow-sm {
-  box-shadow: 0 0 30px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
 }
 
 /* Grid background pattern */
@@ -48,9 +48,9 @@ html {
   background-size: 60px 60px;
 }
 
-/* Radial gradient overlay */
+/* Radial gradient overlay — cyan/blue ambient */
 .radial-fade {
-  background: radial-gradient(ellipse at center top, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at center top, rgba(34, 211, 238, 0.06) 0%, rgba(59, 130, 246, 0.04) 30%, transparent 60%);
 }
 
 /* Floating animation */
@@ -73,8 +73,8 @@ html {
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
-/* Selection */
+/* Selection — blue tint */
 ::selection {
-  background: rgba(139, 92, 246, 0.3);
+  background: rgba(59, 130, 246, 0.3);
   color: #fff;
 }

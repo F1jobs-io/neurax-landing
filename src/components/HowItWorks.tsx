@@ -58,7 +58,7 @@ export function HowItWorks() {
               transition={{ duration: 0.4, delay: i * 0.1 }}
             >
               <div className="flex-shrink-0 w-14 h-14 rounded-2xl border border-white/[0.08] bg-white/[0.03] flex items-center justify-center">
-                <span className="text-lg font-bold text-violet-400 font-mono">
+                <span className="text-lg font-bold text-cyan-400 font-mono">
                   {step.number}
                 </span>
               </div>

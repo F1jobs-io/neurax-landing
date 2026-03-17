@@ -15,7 +15,7 @@ export function CTA() {
           className="relative p-12 rounded-3xl border border-white/[0.06] bg-white/[0.02] overflow-hidden"
         >
           {/* Background glow */}
-          <div className="absolute inset-0 bg-gradient-to-b from-violet-500/5 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 to-transparent pointer-events-none" />
 
           <div className="relative z-10">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">

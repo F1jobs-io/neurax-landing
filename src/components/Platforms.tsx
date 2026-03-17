@@ -80,9 +80,9 @@ export function Platforms() {
             <a
               key={`${p.name}-${p.subtitle}`}
               href={p.url}
-              className="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.05] hover:border-violet-500/20 transition-all duration-300"
+              className="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.05] hover:border-cyan-500/20 transition-all duration-300"
             >
-              <p.icon className="w-8 h-8 text-white/50 group-hover:text-violet-400 transition-colors" />
+              <p.icon className="w-8 h-8 text-white/50 group-hover:text-cyan-400 transition-colors" />
               <div className="text-center">
                 <p className="font-semibold text-white/90">{p.name}</p>
                 <p className="text-sm text-white/40">{p.subtitle}</p>

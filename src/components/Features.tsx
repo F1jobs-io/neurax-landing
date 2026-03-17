@@ -119,8 +119,8 @@ export function Features() {
               variants={item}
               className="group relative p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/[0.1] transition-all duration-300"
             >
-              <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4 group-hover:bg-violet-500/15 transition-colors">
-                <feature.icon className="w-5 h-5 text-violet-400" />
+              <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 group-hover:bg-blue-500/15 transition-colors">
+                <feature.icon className="w-5 h-5 text-cyan-400" />
               </div>
               <h3 className="text-lg font-semibold text-white/90 mb-2">
                 {feature.title}

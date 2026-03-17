@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Apple, Monitor } from "lucide-react";
+import { AppleIcon, WindowsIcon, LinuxIcon } from "./icons";
 
 const VERSION = "0.1.5";
 
@@ -9,7 +9,7 @@ const platforms = [
   {
     name: "macOS",
     subtitle: "Apple Silicon",
-    icon: Apple,
+    icon: AppleIcon,
     url: "/download/macos",
     ext: ".dmg",
     note: "macOS 10.13+",
@@ -17,7 +17,7 @@ const platforms = [
   {
     name: "macOS",
     subtitle: "Intel",
-    icon: Apple,
+    icon: AppleIcon,
     url: "/download/macos-intel",
     ext: ".dmg",
     note: "macOS 10.13+",
@@ -25,7 +25,7 @@ const platforms = [
   {
     name: "Windows",
     subtitle: "64-bit",
-    icon: Monitor,
+    icon: WindowsIcon,
     url: "/download/windows",
     ext: ".exe",
     note: "Windows 10+",
@@ -33,7 +33,7 @@ const platforms = [
   {
     name: "Linux",
     subtitle: "Debian/Ubuntu",
-    icon: Monitor,
+    icon: LinuxIcon,
     url: "/download/linux",
     ext: ".deb",
     note: "Ubuntu 22.04+",
@@ -41,7 +41,7 @@ const platforms = [
   {
     name: "Linux",
     subtitle: "AppImage",
-    icon: Monitor,
+    icon: LinuxIcon,
     url: "/download/linux-appimage",
     ext: ".AppImage",
     note: "Any distro",

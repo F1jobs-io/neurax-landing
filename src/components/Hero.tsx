@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Download, Apple, Monitor, ChevronDown } from "lucide-react";
+import { Download, ChevronDown } from "lucide-react";
+import { AppleIcon, WindowsIcon, LinuxIcon } from "./icons";
 
 type Platform = "macos" | "windows" | "linux" | "unknown";
 
@@ -21,27 +22,27 @@ const downloadLinks: Record<string, { label: string; url: string; icon: React.Re
   macos_arm: {
     label: "macOS (Apple Silicon)",
     url: "/download/macos",
-    icon: <Apple className="w-5 h-5" />,
+    icon: <AppleIcon className="w-5 h-5" />,
   },
   macos_intel: {
     label: "macOS (Intel)",
     url: "/download/macos-intel",
-    icon: <Apple className="w-5 h-5" />,
+    icon: <AppleIcon className="w-5 h-5" />,
   },
   windows: {
     label: "Windows",
     url: "/download/windows",
-    icon: <Monitor className="w-5 h-5" />,
+    icon: <WindowsIcon className="w-5 h-5" />,
   },
   linux_deb: {
     label: "Linux (.deb)",
     url: "/download/linux",
-    icon: <Monitor className="w-5 h-5" />,
+    icon: <LinuxIcon className="w-5 h-5" />,
   },
   linux_appimage: {
     label: "Linux (.AppImage)",
     url: "/download/linux-appimage",
-    icon: <Monitor className="w-5 h-5" />,
+    icon: <LinuxIcon className="w-5 h-5" />,
   },
 };
 

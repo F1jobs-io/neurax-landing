@@ -1,14 +1,14 @@
 import { redirect } from "next/navigation";
 
-const GITHUB_REPO = "KushagraSikka/neurax-frontend";
+const SUPABASE_URL = "https://luqkupfumazhmpmyibrt.supabase.co/storage/v1/object/public/releases";
 const VERSION = "0.1.5";
 
 const downloads: Record<string, string> = {
-  macos: `https://github.com/${GITHUB_REPO}/releases/latest/download/Neura.X_${VERSION}_aarch64.dmg`,
-  "macos-intel": `https://github.com/${GITHUB_REPO}/releases/latest/download/Neura.X_${VERSION}_x64.dmg`,
-  windows: `https://github.com/${GITHUB_REPO}/releases/latest/download/Neura.X_${VERSION}_x64-setup.exe`,
-  linux: `https://github.com/${GITHUB_REPO}/releases/latest/download/Neura.X_${VERSION}_amd64.deb`,
-  "linux-appimage": `https://github.com/${GITHUB_REPO}/releases/latest/download/Neura.X_${VERSION}_amd64.AppImage`,
+  macos: `${SUPABASE_URL}/v${VERSION}/Neura.X_${VERSION}_aarch64.dmg`,
+  "macos-intel": `${SUPABASE_URL}/v${VERSION}/Neura.X_${VERSION}_x64.dmg`,
+  windows: `${SUPABASE_URL}/v${VERSION}/Neura.X_${VERSION}_x64-setup.exe`,
+  linux: `${SUPABASE_URL}/v${VERSION}/Neura.X_${VERSION}_amd64.deb`,
+  "linux-appimage": `${SUPABASE_URL}/v${VERSION}/Neura.X_${VERSION}_amd64.AppImage`,
 };
 
 export async function GET(
